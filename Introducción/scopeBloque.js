@@ -1,0 +1,21 @@
+// PERTENECEN LAS VARIABLES CONST O LET DENTRO DEL BLOQUE { } Y SOLO PODEMOS ACCEDER A ELLAS EN EL BLQOUE
+
+const edad = 19
+
+if (edad >= 18) {
+    const accesoPermitido = true
+    
+    if (true) {
+        console.log(accesoPermitido);
+    }
+
+    const miFuncion = () => {
+        console.log(accesoPermitido);
+    }
+    miFuncion()
+}
+
+// const accesoPermitido = 'SI'
+// console.log(accesoPermitido);
+
+// console.log(accesoPermitido); // Error creado a propósito para comprobar que la variable const o let declarada dentro del bloque solo funciona ahí (descomentad para probar)

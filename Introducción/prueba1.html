@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejemplo de JS #1</title>
+    <script defer> // Hace que se ejecute todo el html antes del script
+        alert('Script desde el head') // Alertas que aparecen como ventana emergente en pantalla
+    </script>
+    <!-- Esta es la forma para ejecutar scripts externos -->
+    <script defer src="holaMundo.js"></script>
+
+</head>
+<body>
+    <h1>Ejemplo 1</h1>
+    
+    <script>
+        document.write('<h2>Prueba 1</h2>') // Forma de escribir texto como un <p> compatible con etiquetas html
+        alert('Prueba de alerta')
+        console.log('Prueba desde la ') // Forma de comunicarte desde la consola, como por ejemplo para anotaciones
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert('Alerta desde documento externo') // El script se puede hacer a parte
