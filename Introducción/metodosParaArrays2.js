@@ -36,13 +36,28 @@ console.log(nombres.includes('Mauro')); // True
 console.log(nombres.includes('Paulo')); // False
 
 // Ejemplos de .every()
-nombres.every((nombre) => {
-    if (typeof nombre == 'string') {        return true;
+// const nombresValidos = nombres.every((nombre) => {
+//     if (typeof nombre == 'string') {        
+//         return true;
+//     } else{
+//         return false;
+//     }
+// })
+
+// console.log('¿Todos los nombres son validos? ' + nombresValidos);
+
+// Ejemplos de .some()
+const nombresValidos = nombres.some((nombre) => {
+    if (typeof nombre != 'string') {        
+        return true;
     } else{
         return false;
     }
 })
-// Ejemplos de .find()
+
+console.log('¿El array es válido? ' + nombresValidos);
+
+
 // Ejemplos de .find()
 // Ejemplos de .find()
 // Ejemplos de .find()
